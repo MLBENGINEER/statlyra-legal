@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Evolve 2048 · Statlyra</title>
+    <meta name="description" content="Evolve 2048: fusiona, evoluciona y elige tu mundo. Juego de Statlyra." />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --fondo: #ffffff;
+        --texto: #1a1a1a;
+        --suave: #555;
+        --borde: #e2e2e2;
+        --acento: #b45309;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fondo: #0f1115;
+          --texto: #e8e8ea;
+          --suave: #a1a1aa;
+          --borde: #2a2d35;
+          --acento: #f59e0b;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--fondo);
+        color: var(--texto);
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.25rem;
+      }
+      main { max-width: 34rem; width: 100%; }
+      h1 { font-size: 2.1rem; margin: 0 0 .3rem; color: var(--acento); letter-spacing: -.02em; }
+      .lema { color: var(--suave); margin: 0 0 2rem; }
+      .mundos { display: grid; gap: .75rem; margin-bottom: 2.5rem; }
+      .mundo { border: 1px solid var(--borde); border-radius: .75rem; padding: 1rem 1.1rem; }
+      .mundo strong { display: block; margin-bottom: .15rem; }
+      .mundo span { color: var(--suave); font-size: .93rem; }
+      nav { display: flex; flex-wrap: wrap; gap: 1.25rem; border-top: 1px solid var(--borde); padding-top: 1.25rem; }
+      a { color: var(--acento); }
+      footer { color: var(--suave); font-size: .85rem; margin-top: 2rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Evolve 2048</h1>
+      <p class="lema">Fusiona, evoluciona y elige tu mundo.</p>
+
+      <div class="mundos">
+        <div class="mundo">
+          <strong>Cochera</strong>
+          <span>De una tuerca suelta al portal de hiperviaje.</span>
+        </div>
+        <div class="mundo">
+          <strong>Ciudad</strong>
+          <span>De una rama caída a una ciudad flotante.</span>
+        </div>
+      </div>
+
+      <nav>
+        <a href="privacidad.html">Política de Privacidad</a>
+        <a href="terminos.html">Condiciones del Servicio</a>
+        <a href="mailto:luismanuelhdezc@gmail.com">Contacto</a>
+      </nav>
+
+      <footer>Statlyra · Desarrollador independiente</footer>
+    </main>
+  </body>
+</html>
